@@ -11,7 +11,8 @@ import { MainComponent } from './components/main/main.component';
 import { ItemsDetailsComponent } from './components/items-details/items-details.component';
 import { ItemsComponent } from './components/items/items.component';
 import { FormComponent } from './components/form/form.component';
-import {MatIconModule} from '@angular/material/icon'
+import {MatIconModule} from '@angular/material/icon';
+import {MatListModule} from '@angular/material/list';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import {MatIconModule} from '@angular/material/icon'
     MatButtonModule,
     MatInputModule,
     MatIconModule,
-    HttpClientModule
+    HttpClientModule,
+    MatListModule
     
   ],
   providers: [],

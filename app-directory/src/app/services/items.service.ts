@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClientModule }   from '@angular/common/http';
+import { HttpClient }   from '@angular/common/http';
 import { map } from 'rxjs';
 import { IItems } from '../models/items';
 
@@ -7,28 +7,27 @@ import { IItems } from '../models/items';
   providedIn: 'root'
 })
 export class ItemsService {
-  url: string = 'http://localhost:3000/products';
+
+  url: string = 'http://localhost:3000/items';
   constructor(private http: HttpClient) { 
 
   }
 
-  getProducts() {
+  getItems() {
     return this.http.get<IItems[]>(this.url);
   }
 
-  getProduct(id: number) {
+  getItem(id: number) {
     return this.http.get<IItems>(`${this.url}/${id}`);
   }
 
-  postProduct(product: IItems) {
-    return this.http.post<IItems>(this.url, product);
+  postItems(item: IItems) {
+    return this.http.post<IItems>(this.url, item);
   }
 
-  deleteProduct(id: number) {
+  deleteItems(id: number) {
     return this.http.delete<any>(`${this.url}/${id}`);
   }
 
-  updateProduct(product: IItems) {
-    return this.http.put<IItems>(`${this.url}/${product.id}`, product);
-  }
+
 }
