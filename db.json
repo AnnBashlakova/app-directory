@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "title": "lorem",
+      "description": "chgfchgfhg",
+      "name": "olya",
+      "phone": 9379992,
+      "email": "anna47297@gmail.com"
+    },
+    {
+      "id": 2,
+      "title": "lorem2",
+      "description": "chgfchgfhg",
+      "name": "anna",
+      "phone": 79036445247,
+      "email": "anna47297@gmail.com"
+    },
+    {
+      "title": "jj",
+      "description": "dd",
+      "name": "d",
+      "phone": "d",
+      "email": "d",
+      "id": 3
+    }
+  ]
+}
