@@ -1,29 +1,20 @@
 {
-    "items": [
-      {
-        "id": 1,
-        "title": "QE",
-        "desc": "123"
-      
-       
-      },
-      {
-        "id": 2,
-        "title": "MacBook",
-        "desc": "123"
-       
-      },
-      {
-        "id": 3,
-        "title": "123",
-        "desc": "123"
-      
-      },
-      {
-        "id": 4,
-        "title": "hbhb",
-        "desc": "123"
-       
-      }
-    ]
-  }
+  "items": [
+    {
+      "id": 1,
+      "title": "lorem",
+      "description": "chgfchgfhg",
+      "name": "olya",
+      "phone": 9379992,
+      "email": "anna47297@gmail.com"
+    },
+    {
+      "id": 2,
+      "title": "lorem2",
+      "description": "chgfchgfhg",
+      "name": "anna",
+      "phone": 79036445247,
+      "email": "anna47297@gmail.com"
+    }
+  ]
+}

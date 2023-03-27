@@ -12,7 +12,6 @@ export class ItemsDetailsComponent  implements OnInit{
 
   item: IItems;
 
-
   itemSubcription: Subscription;
 
   constructor(private route: ActivatedRoute){}
@@ -20,10 +19,9 @@ export class ItemsDetailsComponent  implements OnInit{
   ngOnInit(): void {
     
     this.itemSubcription = this.route.data.subscribe((data) => {
-      // console.log(data)
       this.item = data['data'];
 
-      console.log(this.item)
+      console.log(data['data'].title)
     });
 
 

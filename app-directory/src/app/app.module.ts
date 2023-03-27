@@ -13,6 +13,8 @@ import { ItemsComponent } from './components/items/items.component';
 import { FormComponent } from './components/form/form.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
+import { MatCardModule } from '@angular/material/card';
+import { ReactiveFormsModule }   from '@angular/forms'
 
 
 @NgModule({
@@ -31,7 +33,9 @@ import {MatListModule} from '@angular/material/list';
     MatInputModule,
     MatIconModule,
     HttpClientModule,
-    MatListModule
+    MatListModule,
+    ReactiveFormsModule,
+    MatCardModule
     
   ],
   providers: [],

@@ -1,5 +1,7 @@
 export interface IItems {
     id: number,
     title: string,
-    descr: string,
+    description: string,
+    phone: number,
+    email: string
     }

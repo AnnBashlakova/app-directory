@@ -1,3 +1,38 @@
 <p>form works!</p>
 
-<button  mat-flat-button routerLink="">back</button>
+
+<form [formGroup]="myForm" class="example-form">
+    <mat-form-field class="example-full-width">
+        <mat-label>Title</mat-label>
+        <input matInput formControlName="title">
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Description</mat-label>
+        <input matInput formControlName="description">
+      </mat-form-field>
+        <h2>About you:</h2>
+      <mat-form-field class="example-full-width">
+        <mat-label>Name</mat-label>
+        <input matInput formControlName="name">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Phone</mat-label>
+        <input matInput formControlName="phone">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email">
+      </mat-form-field>
+    <button mat-flat-button  type="button" (click)="onSubmit()">Add new item</button>
+
+</form> 
+
+<button type="button" mat-flat-button routerLink="">back</button>
+
+
+
+
+
+

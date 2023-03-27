@@ -21,12 +21,8 @@ export class ItemsService {
     return this.http.get<IItems>(`${this.url}/${id}`);
   }
 
-  postItems(item: IItems) {
+  postItem(item: IItems) {
     return this.http.post<IItems>(this.url, item);
-  }
-
-  deleteItems(id: number) {
-    return this.http.delete<any>(`${this.url}/${id}`);
   }
 
 
