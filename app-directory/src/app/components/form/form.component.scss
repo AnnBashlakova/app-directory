@@ -1,14 +1,26 @@
-.add-form-container {
-    padding: 4em;
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.5em;
+    padding: 1em;
     text-align: center;
     max-width: 400px;
     margin: auto;
 }
-.add-form-container mat-card-title {
+
+
+.form-container mat-card-title {
     margin: 1em !important;
 }
-.add-form-container button {
+.form-container button {
     margin-top: 10px !important;
+}
+.form {
+    border: 1px solid rgb(235, 233, 249);
+    background-color: #fff;
+    border-radius: 5px;
 }
 mat-card-content {
     margin-bottom: 0;
@@ -27,3 +39,8 @@ button {
 button:hover, .detail-options {
     cursor: pointer;
 }
+.button-back, .button-adding {
+    background-color: rgb(195, 178, 237) !important;
+}
+
+

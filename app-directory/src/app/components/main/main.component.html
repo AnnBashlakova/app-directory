@@ -1,16 +1,17 @@
-<p>main works!</p>
+<div class="wrapper">
+    <h1 class="title">App-directory</h1>
+    <button class="adding__button" mat-flat-button routerLink="form">Add new item</button>
 
-<div class="container">
-
-
-    <mat-list>
-
-        <mat-list-item *ngFor="let item of items" [routerLink]="['/items', item.id]">{{item.title}}</mat-list-item>
-       </mat-list>
+    <main class="main">
+        <mat-list class="item-list">
+            <mat-list-item class="item-list__list"  
+                            *ngFor="let item of items" 
+                            [routerLink]="['/items', item.id]">
+                            <mat-icon>arrow_right_alt</mat-icon>
+                            {{item.title}}
+            </mat-list-item>
+        </mat-list>
+    </main>
 </div>
-
-
-
-<button  mat-flat-button routerLink="form">Add item</button>
 
 
