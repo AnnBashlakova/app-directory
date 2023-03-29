@@ -7,9 +7,9 @@
     </button>
 
     <mat-list class="item-details">
-        <mat-list-item>
-            <h3 mat-line>{{item.description}}</h3>
-        </mat-list-item>
+        <div class="item-details__description">
+            {{item.description}}
+        </div>
         <mat-divider></mat-divider>
         <h2 class="item-details-title">Author:</h2>
 
@@ -28,4 +28,8 @@
         </mat-list-item>
         <mat-divider></mat-divider>
     </mat-list>
+
+
+
+
 </div>

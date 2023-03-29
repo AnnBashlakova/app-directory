@@ -6,6 +6,10 @@
     padding-top: 1.5em;
 };
 
+.item-details {
+    max-width: 90vw;
+}
+
 .item-title {
     font-weight: 600;
     font-size: 1.5em;
@@ -14,4 +18,10 @@
 .item-details-title {
     font-weight: normal;
     text-align: center;
+}
+
+.item-details__description {
+    height: auto;
+    padding-bottom: 10px;
+    line-height: 1.5em;
 }

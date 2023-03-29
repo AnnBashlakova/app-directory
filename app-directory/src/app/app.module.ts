@@ -9,7 +9,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MainComponent } from './components/main/main.component';
 import { ItemsDetailsComponent } from './components/items-details/items-details.component';
-import { ItemsComponent } from './components/items/items.component';
 import { FormComponent } from './components/form/form.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
@@ -23,7 +22,6 @@ import { ReactiveFormsModule }   from '@angular/forms'
     AppComponent,
     MainComponent,
     ItemsDetailsComponent,
-    ItemsComponent,
     FormComponent
   ],
   imports: [
