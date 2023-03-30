@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators} from '@angular/forms';
 import { AbstractControl, ValidatorFn } from '@angular/forms';
@@ -5,10 +6,12 @@ import { MatCardModule } from '@angular/material/card';
 import { ItemsService } from 'src/app/services/items.service';
 
 
+
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
   styleUrls: ['./form.component.scss']
+
 })
 export class FormComponent implements OnInit {
 
