@@ -1,0 +1,27 @@
+.app-directory {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.5em;
+}
+
+.app-directory__title {
+    font-size: 1.75em;
+    font-weight: 600;
+    padding-bottom: 1em;
+}
+
+.app-directory__list-item {
+    cursor: pointer !important;
+    transition: 0.3s;
+}
+
+.app-directory__list-item:hover {
+    scale: 1.5;
+}
+
+.app-directory__icon {
+    display: inline-block;
+    vertical-align: middle;
+}

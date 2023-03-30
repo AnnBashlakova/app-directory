@@ -1,0 +1,57 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.5em;
+    padding: 1em;
+    text-align: center;
+    max-width: 400px;
+    margin: auto;
+}
+
+.form-container mat-card-title {
+    margin: 1em !important;
+}
+
+.form-container button {
+    margin-top: 10px !important;
+}
+
+.form {
+    border: 1px solid rgb(235, 233, 249);
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+mat-card-content {
+    margin-bottom: 0;
+}
+
+form {
+    padding-top: 1em;
+}
+
+mat-form-field {
+    width: 90%;
+}
+
+button {
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 1em;
+}
+
+button:hover,
+.detail-options {
+    cursor: pointer;
+}
+
+.form__cancel-button, 
+.form__submit-button {
+    background-color: rgb(195, 178, 237) !important;
+}
+
+.form__error {
+    color: red;
+}
