@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 To run the JSON server and start listening for requests on http://localhost:3000, follow these steps:
 Install dependencies for JSON server if not already done:
 
-`npm install -g json-server`
+`npm install -g json-server`  
 `json-server --watch db.json`
 
 ## Development server
