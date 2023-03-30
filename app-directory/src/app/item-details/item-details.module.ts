@@ -1,8 +1,9 @@
+
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import {MatListModule} from '@angular/material/list';
-import { FormComponent } from './form.component';
+import { ItemsDetailsComponent } from './items-details.component';
 import { HttpClientModule }   from '@angular/common/http';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
@@ -10,13 +11,12 @@ import {MatIconModule} from '@angular/material/icon';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 
-const routes: Routes = [{path: '', component: FormComponent}];
+const routes: Routes = [{path: '', component: ItemsDetailsComponent}];
 
 @NgModule({
-  declarations: [FormComponent],
+  declarations: [ItemsDetailsComponent],
   imports: [
     CommonModule,
-    MatListModule,
     ReactiveFormsModule,
     MatButtonModule,
     MatInputModule,
@@ -34,4 +34,4 @@ const routes: Routes = [{path: '', component: FormComponent}];
 })
 
 
-export class FormModule { }
+export class ItemDetailsModule { }

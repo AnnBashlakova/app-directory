@@ -7,8 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
-import { MainComponent } from './components/main/main.component';
-import { ItemsDetailsComponent } from './components/items-details/items-details.component';
+import { MainComponent } from './main/main.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
@@ -20,7 +19,6 @@ import { ReactiveFormsModule }   from '@angular/forms'
   declarations: [
     AppComponent,
     MainComponent,
-    ItemsDetailsComponent,
   ],
   imports: [
     BrowserModule,

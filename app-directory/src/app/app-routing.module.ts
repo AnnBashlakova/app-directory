@@ -1,19 +1,24 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ItemsDetailsComponent } from './components/items-details/items-details.component';
+// import { ItemsDetailsComponent } from './item-details/items-details.component';
+
+import { MainComponent } from './main/main.component';
 import { ItemResolver } from './services/items.resolver';
-import { MainComponent } from './components/main/main.component';
+
 
 
 const routes: Routes = [
   {path: '', component: MainComponent},
-  {path: 'form', 
-  // component: FormComponent,
+  {path: 'form',
   loadChildren: ():any =>
       import('./form/form.module').then( (m):any => m.FormModule)
 },
-  // { path: 'form', loadChildren: () => import('./components/form/form.component').then(m => m.FormComponent) },
-  {path: 'items/:id', component: ItemsDetailsComponent, resolve: {data: ItemResolver}}
+  {path: 'items/:id', 
+  loadChildren: ():any =>
+      import('./item-details/item-details.module').then( (m):any => m.ItemDetailsModule),
+      resolve: {data: ItemResolver}
+    }
+  
 ];
 
 @NgModule({
