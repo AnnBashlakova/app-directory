@@ -13,21 +13,16 @@ import { Subscription } from 'rxjs';
 export class MainComponent implements OnInit {
   items: IItems[];
   itemsSubcription: Subscription;
-  
-    constructor(private ItemsService: ItemsService) {}
-  
-    ngOnInit(): void {
-      this.itemsSubcription = this.ItemsService.getItems().subscribe((data) => {
-        this.items = data;
 
-        console.log(this.items)
-      });
-    }
+  constructor(private ItemsService: ItemsService) { }
 
-  
-    ngOnDestroy(): void{
-      if (this.itemsSubcription) this.itemsSubcription.unsubscribe();
-    }
-  
+  ngOnInit(): void {
+    this.itemsSubcription = this.ItemsService.getItems().subscribe((data) => {
+      this.items = data;
+    });
   }
-  
+
+  ngOnDestroy(): void {
+    if (this.itemsSubcription) this.itemsSubcription.unsubscribe();
+  }
+};

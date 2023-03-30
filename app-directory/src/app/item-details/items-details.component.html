@@ -1,35 +1,30 @@
 <div class="items-details__container">
-
     <div class="item-title">{{item.title}}</div>
-    <button mat-flat-button routerLink="">
-        <mat-icon fontIcon="home">
+    <button class="items-details__back-button" mat-flat-button routerLink="">
+        <mat-icon class="items-details__back-icon" fontIcon="home">
         </mat-icon>back
     </button>
 
-    <mat-list class="item-details">
+    <mat-list class="items-details__list">
         <div class="item-details__description">
             {{item.description}}
         </div>
-        <mat-divider></mat-divider>
-        <h2 class="item-details-title">Author:</h2>
+        <mat-divider class="items-details__divider"></mat-divider>
+        <h2 class="items-details__details-title">Author:</h2>
 
-        <mat-list-item>
-            <h3 mat-line>Name: {{item.name}}</h3>
+        <mat-list-item class="items-details__list-item">
+            <h3 items-details__list-name mat-line>Name: {{item.name}}</h3>
         </mat-list-item>
-        <mat-divider></mat-divider>
+        <mat-divider class="items-details__divider"></mat-divider>
 
-        <mat-list-item>
-            <h3 mat-line>Phone: {{item.phone}}</h3>
+        <mat-list-item class="items-details__list-item">
+            <h3 items-details__list-phone mat-line>Phone: {{item.phone}}</h3>
         </mat-list-item>
-        <mat-divider></mat-divider>
+        <mat-divider class="items-details__divider"></mat-divider>
 
-        <mat-list-item>
+        <mat-list-item class="items-details__list-item">
             <h3 mat-line>Email: {{item.email}}</h3>
         </mat-list-item>
-        <mat-divider></mat-divider>
+        <mat-divider class="items-details__divider"></mat-divider>
     </mat-list>
-
-
-
-
 </div>

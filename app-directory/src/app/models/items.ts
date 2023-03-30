@@ -5,4 +5,4 @@ export interface IItems {
     name: string,
     phone: number,
     email: string
-    }
+}

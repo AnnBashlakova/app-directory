@@ -1,4 +1,4 @@
-.wrapper {
+.app-directory {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,13 +6,13 @@
     padding-top: 1.5em;
 }
 
-.title {
+.app-directory__title {
     font-size: 1.75em;
     font-weight: 600;
     padding-bottom: 1em;
 }
 
-.item-list__list {
+.app-directory__list-item {
     cursor: pointer !important;
     transition: 0.3s;
 }
@@ -21,7 +21,7 @@
     scale: 1.5;
 }
 
-mat-icon {
+.app-directory__icon {
     display: inline-block;
     vertical-align: middle;
 }

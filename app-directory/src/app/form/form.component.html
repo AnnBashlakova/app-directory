@@ -1,45 +1,48 @@
 <div class="form-container">
   <form [formGroup]="myForm" class="form">
-    <h2>Form details:</h2>
-    <mat-form-field>
-      <mat-label>Title:</mat-label>
-      <input matInput formControlName="title">
-      <p *ngIf="this.myForm.get('title')?.invalid && this.myForm.get('title')?.touched" style="color: red">Can't start
-        with a small letter or whitespace</p>
+    <h2 class="form__title">Form details:</h2>
+    <mat-form-field class="form__field">
+      <mat-label lass="form__label">Title:</mat-label>
+      <input matInput formControlName="title" class="form__input">
+      <p *ngIf="this.myForm.get('title')?.invalid && this.myForm.get('title')?.touched" 
+          style="color: red" 
+          class="form__error">Can't start
+              with a small letter or whitespace or number</p>
     </mat-form-field>
     
-    <mat-form-field appearance="fill">
-      <mat-label>Description</mat-label>
-      <textarea matInput formControlName="description"></textarea>
-      <p *ngIf="this.myForm.get('description')?.invalid && this.myForm.get('description')?.touched" style="color: red">
+    <mat-form-field appearance="fill" class="form__field">
+      <mat-label class="form__label">Description</mat-label>
+      <textarea matInput formControlName="description" class="form__textarea"></textarea>
+      <p *ngIf="this.myForm.get('description')?.invalid && this.myForm.get('description')?.touched" class="form__error">
         Can't be less than 10 characters</p>
     </mat-form-field>
-    <h2>About you:</h2>
+    <h3 class="form__subtitle">About you:</h3>
 
-    <mat-form-field>
-      <mat-label>Name:</mat-label>
-      <input matInput formControlName="name">
-      <p *ngIf="this.myForm.get('name')?.invalid && this.myForm.get('name')?.touched" style="color: red">
+    <mat-form-field class="form__field">
+      <mat-label class="form__label">Name:</mat-label>
+      <input matInput formControlName="name" class="form__input">
+      <p *ngIf="this.myForm.get('name')?.invalid && this.myForm.get('name')?.touched" class="form__error">
         Please fill in the field, it is necessary to enter more than two characters.</p>
     </mat-form-field>
 
-    <mat-form-field>
-      <mat-label>Phone:</mat-label>
-      <input matInput formControlName="phone">
-      <p *ngIf="this.myForm.get('phone')?.invalid && this.myForm.get('phone')?.touched" style="color: red">Only digits
-        and special symbols should be used. More than 9 characters (e.g. +79036445247)</p>
+    <mat-form-field class="form__field">
+      <mat-label class="form__label">Phone:</mat-label>
+      <input matInput formControlName="phone" class="form__input">
+      <p *ngIf="this.myForm.get('phone')?.invalid && this.myForm.get('phone')?.touched" class="form__error">
+        Only numbers and special characters are allowed. 
+        The length should be between 9 and 15 characters (e.g. +79036445247)
+      </p>
     </mat-form-field>
 
-    <mat-form-field>
-      <mat-label>Email:</mat-label>
-      <input matInput formControlName="email">
-      <p *ngIf="this.myForm.get('email')?.invalid && this.myForm.get('email')?.touched" style="color: red">Value is
+    <mat-form-field class="form__field">
+      <mat-label class="form__label">Email:</mat-label>
+      <input matInput formControlName="email" class="form__input">
+      <p *ngIf="this.myForm.get('email')?.invalid && this.myForm.get('email')?.touched" class="form__error">Value is
         invalid. @ must be used</p>
     </mat-form-field>
 
-    <button class="button-adding" mat-flat-button [disabled]="myForm.invalid" type="button" (click)="onSubmit()">Add new
+    <button class="form__submit-button" mat-flat-button [disabled]="myForm.invalid" type="button" (click)="onSubmit()">Add new
       item</button>
-    <button class="button-back" type="button" mat-flat-button routerLink="">Cancel</button>
+    <button class="form__cancel-button" type="button" mat-flat-button routerLink="">Cancel</button>
   </form>
-
 </div>

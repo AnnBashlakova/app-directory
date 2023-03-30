@@ -8,24 +8,14 @@ import { IItems } from 'src/app/models/items';
   templateUrl: './items-details.component.html',
   styleUrls: ['./items-details.component.scss']
 })
-export class ItemsDetailsComponent  implements OnInit{
-
+export class ItemsDetailsComponent  implements OnInit {
   item: IItems;
-
   itemSubcription: Subscription;
 
   constructor(private route: ActivatedRoute){}
-
-  ngOnInit(): void {
-    
+  ngOnInit(): void {   
     this.itemSubcription = this.route.data.subscribe((data) => {
       this.item = data['data'];
-
-      console.log(data['data'].title)
     });
-
-
-  }
-
-  
-}
+  };
+};
