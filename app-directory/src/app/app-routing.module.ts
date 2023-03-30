@@ -8,9 +8,9 @@ import {FormComponent} from './form/form.component'
 const routes: Routes = [
   {path: '', component: MainComponent},
   {path: 'form', 
-  component: FormComponent,
-  loadChildren:() =>import('./form/form.module').then(x=>x.FormModule)
-  //FormComponent: () => import('./form/form.component').then(component => component.FormComponent)
+  // component: FormComponent,
+  loadChildren: ():any =>
+      import('./form/form.module').then( (m):any => m.FormModule)
 },
   // { path: 'form', loadChildren: () => import('./components/form/form.component').then(m => m.FormComponent) },
   {path: 'items/:id', component: ItemsDetailsComponent, resolve: {data: ItemResolver}}
