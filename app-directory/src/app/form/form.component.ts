@@ -25,9 +25,11 @@ export class FormComponent implements OnInit {
   })
 
   onSubmit() {
-    this.item.postItem(this.myForm.value).subscribe((result) => {
+    this.item.postItem(this.myForm.value).subscribe((result)  => {
       console.log(result);
     })
+
+
 
     this.myForm.reset();
 

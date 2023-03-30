@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ItemsDetailsComponent } from './components/items-details/items-details.component';
 import { ItemResolver } from './services/items.resolver';
 import { MainComponent } from './components/main/main.component';
-import {FormComponent} from './form/form.component'
+
 
 const routes: Routes = [
   {path: '', component: MainComponent},
